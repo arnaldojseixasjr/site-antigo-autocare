@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AutoCare - Estetica Automotiva - Home Page Oficial</title>
+  <style>
+    /* Estilos propositalmente ruins e antigos para análise dos alunos */
+    body {
+      background-color: #111111;
+      color: #333333; /* PÉSSIMO CONTRASTE: texto escuro em fundo escuro */
+      font-family: "Times New Roman", Times, serif;
+      margin: 0;
+      padding: 10px;
+    }
+    
+    .topo {
+      background-color: #222222;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 5px solid red;
+    }
+
+    .titulo-principal {
+      color: #555555; /* Ruim de ler */
+      font-size: 32px;
+    }
+
+    .menu {
+      margin-top: 10px;
+    }
+
+    .menu a {
+      color: #777777;
+      margin: 0 10px;
+      text-decoration: underline;
+    }
+
+    .conteudo {
+      width: 1200px; /* LARGURA FIXA: QUEBRA TOTALMENTE NO CELULAR */
+      margin: 20px auto;
+      background-color: #1a1a1a;
+      padding: 20px;
+    }
+
+    .servico-item {
+      border: 1px solid #333;
+      padding: 10px;
+      margin-bottom: 10px;
+      background: #000;
+    }
+
+    .btn-contato {
+      background-color: #333;
+      color: #666;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PÉSSIMA PRÁTICA: Uso de DIV em vez de HEADER semântico -->
+  <div class="topo">
+    <div class="titulo-principal">AUTOCARE ESTETICA AUTOMOTIVA</div>
+    <div class="menu">
+      <a href="#">Home</a> | 
+      <a href="#">Servicos</a> | 
+      <a href="#">Sobre Nos</a> | 
+      <a href="#">Contato</a>
+    </div>
+  </div>
+
+  <!-- PÉSSIMA PRÁTICA: Container fixo sem responsividade -->
+  <div class="conteudo">
+    <h2>Bem-vindo ao nosso site!</h2>
+    <p>Nós fazemos polimento, lavagem e vitrificacao. Entre em contato para saber o preço.</p>
+    
+    <hr>
+
+    <h3>Nossos Servicos:</h3>
+    
+    <div class="servico-item">
+      <h4>Polimento</h4>
+      <p>Deixa o carro brilhando. Preço a combinar dependendo do carro no WhatsApp.</p>
+    </div>
+
+    <div class="servico-item">
+      <h4>Vitrificacao</h4>
+      <p>Protege a pintura por muito tempo. Chame no Zap pra orcamento.</p>
+    </div>
+
+    <div class="servico-item">
+      <h4>Lavagem</h4>
+      <p>Lava o carro por dentro e por fora.</p>
+    </div>
+
+    <!-- PÉSSIMA PRÁTICA: Formulário fictício que não funciona e não calcula nada -->
+    <h3>Solicitar Orcamento:</h3>
+    <p>Preencha abaixo e aguarde ate 48 horas para resposta:</p>
+    
+    <form onsubmit="alert('Erro no servidor! Tente enviar mensagem direta no Instagram.'); return false;">
+      <label>Seu Nome:</label><br>
+      <input type="text"><br><br>
+      
+      <label>Seu Telefone:</label><br>
+      <input type="text"><br><br>
+      
+      <button class="btn-contato" type="submit">Enviar Pedido de Orcamento</button>
+    </form>
+  </div>
+
+  <!-- PÉSSIMA PRÁTICA: Rodapé sem tag FOOTER -->
+  <div style="text-align: center; color: #444; margin-top: 50px; font-size: 12px;">
+    Copyright 2012 - AutoCare Todos os direitos reservados. Site desenvolvido por Freelancer.
+  </div>
+
+</body>
+</html>
